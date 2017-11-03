@@ -1,2 +1,1 @@
-# dashboard-api
-challange #30 - #37
+lets try making a simple dasboard using rest-api
