@@ -1,0 +1,11 @@
+1. Open Postman
+2. Choose the method (Get, POST, PUT (Edit) or Delete)
+3. if want to login :
+- fill email dan password in field
+4. if want to fill data
+- fill letter and frequency
+5. if want to edit by id
+- read data
+- make a field (id)
+- fill id in url
+- fill the letter and frequency in the field
