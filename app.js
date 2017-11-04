@@ -11,6 +11,7 @@ var cors = require('cors');
 var user = require('./routes/user');
 var data = require('./routes/data');
 var datadate = require('./routes/datadate');
+var maps = require('./routes/maps');
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use(cors());
 app.use('/api/user', user);
 app.use('/api/data', data);
 app.use('/api/datadate', datadate);
+app.use('/api/maps', maps);
 
 
 

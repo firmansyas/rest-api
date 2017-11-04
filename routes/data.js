@@ -2,7 +2,6 @@
 
 const express = require('express');
 const router = express.Router();
-const User = require('../models/user');
 const Data = require('../models/data');
 const jwt = require('jsonwebtoken');
 const config = require('../config');
@@ -94,10 +93,10 @@ router.post('/search', function (req, res) {
     searchData['frequency'] = frequency;
   }
   if(letter.length > 0){
-    res.json("Data letter not found")
+    res.json({message: "Data letter not found"})
   }
   if(frequency.length > 0){
-
+    res.json({message: "Data frequency not found"})
   }  else{
     Data.find(searchData, function(err, dataSearch){
       res.json(dataSearch)
