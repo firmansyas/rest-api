@@ -1,3 +1,8 @@
+1. Npm Install for Install in Package json
+2. Already install mongodb 
+
+Using PostMan: 
+
 1. Open Postman
 2. Choose the method (Get, POST, PUT (Edit) or Delete)
 3. if want to login :
@@ -9,3 +14,4 @@
 - make a field (id)
 - fill id in url
 - fill the letter and frequency in the field
+

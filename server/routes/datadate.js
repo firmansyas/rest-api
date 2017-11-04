@@ -89,15 +89,20 @@ router.post('/search', function (req, res) {
   if(req.body.letter){
     searchdataDate['letter'] = letter; //data letter di push ke object (searchdataDate)
   }
+
   if (req.body.frequency){
     searchdataDate['frequency'] = frequency; //data letter di push ke object (searchdataDate)
   }
+
   if (letter.length > 0){
     res.json({message: "Data letter not found'"})
   }
+
   if (frequency.length > 0){
     res.json({message: "Data frequency not found"})
-  } else {
+  }
+
+  else {
     Datadate.find(searchdataDate, function (err, datadateSearch) { //fungsi untuk mencari semua data
       res.json(datadateSearch)
     })
